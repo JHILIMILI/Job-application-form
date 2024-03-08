@@ -1,0 +1,92 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-holder{
+    max-width: 600px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.361);
+    padding: 20px;
+}
+
+@media (max-width:550px){
+    .upper-holder,
+.bottom-holder{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+}
+
+.form-headlines h1{
+    font-size: 22px;
+}
+
+.form-controll{
+    display: flex;
+    flex-direction: column
+}
+
+.form-controll label{
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.form-controll input,
+.form-controll select{
+   padding: 2px 4px 2px 4px;
+   outline: none;
+   border: 1px solid rgb(70, 70, 70);
+   border-radius: 2px;
+}
+
+
+
+.upper-holder,
+.bottom-holder{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+}
+
+.form-controll-mid{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-controll-mid label{
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.form-controll-mid input{
+    padding: 26px;
+    outline: none;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 2px;
+ }
+
+ .button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+   
+}
+
+ button{
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    padding: 8px 8px 8px 8px;
+    font-size: 10px;
+ }
+
+ button:hover{
+    background-color: rgb(198, 0, 0);
+    cursor: pointer;
+ }
